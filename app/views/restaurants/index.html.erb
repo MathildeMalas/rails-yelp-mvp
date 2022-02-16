@@ -1,0 +1,7 @@
+<%= @restaurants = Restaurant.all %>
+<h1>All restaurants</h1>
+
+<ol><% @restaurants.each do |restaurant| %>
+  <li><%= restaurant.name %></li>
+  <% end %>
+</ol>
